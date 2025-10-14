@@ -1,0 +1,66 @@
+---
+// No props needed - self-contained footer component
+---
+
+<footer>
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12">
+      <div class="lg:col-span-4">
+        <img src="https://static.wixstatic.com/media/03854e_fbcf85bf50344ac6b6ac6e3c7deab5e5~mv2.jpg/v1/crop/x_232,y_210,w_760,h_284/fill/w_265,h_99,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/62C69048-CAB9-4912-AB39-D5B7C5AAB7ED_jpeg.jpg" alt="Electrical Service in New Jersey" class="h-auto w-48 bg-white p-2" />
+        <p class="font-body mt-6 text-sm text-gray-800">Our highly skilled team of professionally licensed journeyman electricians, engineers, and installation specialists are here to provide unbeatable quality, installation, design, and customer service.</p>
+        <div class="mt-6 flex items-center gap-3">
+          <a href="https://www.facebook.com/wix" target="_blank" rel="noreferrer noopener" aria-label="Facebook" class="transition hover:opacity-80">
+            <img src="https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/dG9wY3JvcC5wbmc.png" alt="Facebook" class="h-7 w-7 rounded-full bg-white" />
+          </a>
+          <a href="#" class="transition hover:opacity-80">
+            <img src="https://static.wixstatic.com/media/11062b_084cbbff6ae446c1b03dc3637193e77a~mv2.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_084cbbff6ae446c1b03dc3637193e77a~mv2.png" alt="" class="h-7 w-7" />
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-2 lg:col-start-6">
+        <h6 class="font-heading-bold text-lg">Useful Links</h6>
+        <nav class="mt-4" aria-label="Footer">
+          <ul class="space-y-2">
+            <li><a href="https://www.siruselectric.com" class="font-bold font-body text-sm text-gray-800 transition hover:text-white">HOME</a></li>
+            <li><a href="https://www.siruselectric.com/services" class="font-bold font-body text-sm text-gray-800 transition hover:text-white">SERVICES</a></li>
+            <li><a href="https://www.siruselectric.com/projects" class="font-bold font-body text-sm text-gray-800 transition hover:text-white">PROJECTS</a></li>
+            <li><a href="https://www.siruselectric.com/areas" class="font-bold font-body text-sm text-gray-800 transition hover:text-white">AREAS</a></li>
+            <li><a href="https://www.siruselectric.com/about-us" class="font-bold font-body text-sm text-gray-800 transition hover:text-white">ABOUT US</a></li>
+            <li><a href="https://www.siruselectric.com/contact-us" class="font-bold font-body text-sm text-gray-800 transition hover:text-white">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="lg:col-span-4">
+        <h6 class="font-heading-bold text-lg">Subscribe To Our Newsletter</h6>
+        <form class="mt-4 space-y-4">
+          <div>
+            <label for="email-input" class="sr-only">Email</label>
+            <input
+              name="email"
+              id="email-input"
+              type="email"
+              placeholder="Email"
+              aria-invalid="false"
+              pattern="^.+@.+\.[a-zA-Z]{2,63}$"
+              maxlength="250"
+              autocomplete="email"
+              class="w-full rounded-md border bg-white/10 px-4 py-3 text-sm text-white placeholder:text-gray-400 focus:border-primary focus:ring-primary"
+            />
+          </div>
+          <button type="submit" class="w-full rounded-md bg-secondary px-5 py-3 text-base font-semibold text-white ring-1 ring-inset ring-white/20 transition hover:bg-white/10">
+            SUBMIT NOW
+          </button>
+          <p class="hidden text-center text-sm text-green-400">Thanks for subscribing!</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-r from-secondary to-primary">
+    <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+      <p class="text-center text-sm text-gray-300">© 2023 by Sirus Electric. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>

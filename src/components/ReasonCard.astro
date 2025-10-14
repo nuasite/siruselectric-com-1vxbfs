@@ -1,0 +1,16 @@
+---
+export interface Props {
+  iconSrc: string;
+  iconAlt: string;
+  title: string;
+}
+
+const { iconSrc, iconAlt, title } = Astro.props;
+---
+
+<div class="flex flex-col items-center rounded-lg bg-white p-6 text-center shadow-md">
+  <div class="flex h-16 w-16 items-center justify-center rounded-full bg-bg-dark">
+    <img src={iconSrc} alt={iconAlt} class="h-7 w-7 invert" />
+  </div>
+  <h6 class="font-heading-bold mt-4 text-base text-secondary">{title}</h6>
+</div>

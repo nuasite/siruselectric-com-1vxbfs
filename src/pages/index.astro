@@ -1,0 +1,169 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import ReasonCard from '../components/ReasonCard.astro';
+import '../styles/global.css';
+---
+
+<Layout>
+  <Header />
+
+  <main id="main-content" tabindex="-1">
+    <Hero />
+
+    <!-- Who We Are Section -->
+    <section class="bg-white py-16 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-24">
+          <div class="relative">
+            <img
+              src="https://static.wixstatic.com/media/03854e_5d80ceb8c94d412c95ce88de179a30d0~mv2.jpg/v1/crop/x_26,y_0,w_394,h_500/fill/w_400,h_506,al_c,lg_1,q_80,enc_avif,quality_auto/about-1.jpg"
+              alt="Electrician"
+              class="w-full rounded-lg shadow-xl"
+            />
+          </div>
+          <div>
+            <p class="font-body text-base font-semibold uppercase tracking-wide text-gray-500">WHO WE ARE?</p>
+            <h2 class="font-heading-bold mt-2 text-3xl text-secondary sm:text-4xl">We Are An <br /> Energy & Electrical<br /> Solutions Company</h2>
+            <div class="font-body mt-6 space-y-4 text-base text-text-primary">
+              <p>We have the training, talent, and expertise to understand your electrical needs. We have built a solid reputation for integrity and quality in the electrical contracting industry.</p>
+              <p>Our qualified electricians can also help educate you, and provide solutions with cost-saving and preventative maintenance programs. When you are looking for residential electrical solutions you can trust, you can count on Sirus Electric.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-bg-medium py-16 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="font-body text-base font-semibold uppercase tracking-wide text-gray-500">WHAT WE OFFER?</p>
+          <h2 class="font-heading-bold mt-2 text-3xl text-secondary sm:text-4xl">We Provide Professional<br /> Electrical Services</h2>
+        </div>
+        <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <ServiceCard
+            href="https://www.siruselectric.com/services"
+            imageSrc="https://static.wixstatic.com/media/fee2393e065c485ead876fd77f5402de.jpg/v1/fill/w_295,h_351,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Electrician.jpg"
+            imageAlt="Electrician working in a residential setting"
+            title="Residential Electrical Services"
+          />
+          <ServiceCard
+            href="https://www.siruselectric.com/services"
+            imageSrc="https://static.wixstatic.com/media/03854e_c9098ef3ec7c4f96965ca918d397927e~mv2.jpg/v1/fill/w_295,h_351,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Image.jpg"
+            imageAlt="Solar Power panels on a roof"
+            title="Commercial Electrical services"
+          />
+          <ServiceCard
+            href="https://www.siruselectric.com/services"
+            imageSrc="https://static.wixstatic.com/media/03854e_cd2c044c25c444fcaf97af9dcce93bc6~mv2.jpg/v1/fill/w_295,h_351,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/variety-materials-tools-electrician_687470-101.jpg"
+            imageAlt="Various electrical tools and materials"
+            title="Electrical Engineering Services"
+          />
+        </div>
+        <div class="mt-16 text-center">
+          <a href="https://www.siruselectric.com/services" class="inline-block rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white shadow-lg shadow-primary/20 transition hover:bg-opacity-90">
+            VIEW ALL SERVICES
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEED Section -->
+    <section class="bg-white py-16 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-24">
+          <div class="relative mx-auto w-full max-w-md">
+            <img
+              src="https://static.wixstatic.com/media/03854e_d406a9ed3c014a4ba7cf0909b1a47ffd~mv2.jpg/v1/fill/w_407,h_397,al_c,lg_1,q_80,enc_avif,quality_auto/team-v1-3-1.jpg"
+              alt="Electrical Engineering"
+              class="w-full rounded-lg"
+            />
+            <img
+              src="https://static.wixstatic.com/media/03854e_ea8cf4be56c043f89e7715ced7d506c9~mv2.png/v1/crop/x_288,y_102,w_626,h_628/fill/w_186,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LEED_logo.png"
+              alt="LEED_logo"
+              class="absolute -left-12 -bottom-12 h-44 w-44"
+            />
+          </div>
+          <div class="lg:mt-0">
+            <p class="font-body text-base font-semibold uppercase tracking-wide text-gray-500">LEED</p>
+            <h2 class="font-heading-bold mt-2 text-3xl text-secondary sm:text-4xl">We Are Verified By Leed</h2>
+            <div class="font-body mt-6 space-y-4 text-base text-text-secondary">
+              <p>As LEED accredited professionals, we understand the principles and practices of green building and Leadership in Energy & Environmental Design. We are able to readily assist our customers in these areas so that they can work toward developing high-performance, sustainable buildings.</p>
+              <p>Additionally, our familiarity with LEED requirements, resources and processes enables us to not only promote a better understanding of LEED in the construction industry, but also to implement new electrical engineering methods in the building construction process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reasons to Choose Us Section -->
+    <section class="bg-bg-light py-16 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-2 lg:gap-24">
+          <div>
+            <p class="font-body text-base font-semibold uppercase tracking-wide text-gray-500">WHY CHOOSE US?</p>
+            <h2 class="font-heading-bold mt-2 text-3xl text-secondary sm:text-4xl">Great Reasons to<br />Choose us</h2>
+            <p class="font-body mt-4 text-base text-text-secondary">We believe on our qualified services which made us one of the best service provider. Our team always focuses on :</p>
+            <div class="mt-10 grid grid-cols-2 gap-6 md:grid-cols-3">
+              <ReasonCard
+                iconSrc="https://static.wixstatic.com/media/03854e_c0b31d4bc373403891b16de9bc02e01e~mv2.png/v1/fill/w_27,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/quality.png"
+                iconAlt="quality"
+                title="High Quality Work"
+              />
+              <ReasonCard
+                iconSrc="https://static.wixstatic.com/media/03854e_a6fa541a94bf44f6a474d7706ce79143~mv2.png/v1/fill/w_27,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/insurance.png"
+                iconAlt="insurance"
+                title="License and Insurance"
+              />
+              <ReasonCard
+                iconSrc="https://static.wixstatic.com/media/03854e_9350cd0875d14668aec2e37f2825a605~mv2.png/v1/fill/w_27,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/satisfaction.png"
+                iconAlt="satisfaction"
+                title="100% Satisfaction Guarantee"
+              />
+              <ReasonCard
+                iconSrc="https://static.wixstatic.com/media/03854e_f86f2385785e40639e8417142a473545~mv2.png/v1/fill/w_27,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/trust%20(1).png"
+                iconAlt="trust"
+                title="Trust"
+              />
+              <ReasonCard
+                iconSrc="https://static.wixstatic.com/media/03854e_709bb94dfc1f4febbe56a7583f34987c~mv2.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/satisfaction%20(1).png"
+                iconAlt="satisfaction"
+                title="Customer Support"
+              />
+              <ReasonCard
+                iconSrc="https://static.wixstatic.com/media/03854e_53c896a8b6e347cfbb1caa0c099de38b~mv2.png/v1/fill/w_27,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/best-price.png"
+                iconAlt="best-price"
+                title="Straightforward pricing"
+              />
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <img
+              src="https://static.wixstatic.com/media/03854e_08d45b7e0ef64267985fe6c5ae75d83b~mv2.jpg/v1/fill/w_258,h_429,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/chooseus-2.jpg"
+              alt="Electrician testing a circuit"
+              class="h-auto w-1/2 rounded-lg object-cover shadow-lg"
+            />
+            <img
+              src="https://static.wixstatic.com/media/03854e_ed338f79b8af4c049f1cd86dae479f68~mv2.jpg/v1/fill/w_260,h_429,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/chooseus-1_edited.jpg"
+              alt="Electrician working on a panel"
+              class="mt-16 h-auto w-1/2 rounded-lg object-cover shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+
+  <!-- Chat widget button -->
+  <button class="fixed bottom-5 right-5 z-40 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg transition hover:bg-opacity-90" aria-label="Open Chat">
+    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+    </svg>
+  </button>
+</Layout>

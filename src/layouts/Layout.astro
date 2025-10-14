@@ -1,0 +1,43 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "Sirus Electric Inc | electrical contractor | 1 Meadowlands Plaza suite 200, East Rutherford, NJ, USA",
+  description = "Professional electrical services you can trust. Licensed, bonded & insured electrical contractor in New Jersey."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#3056e4" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Public+Sans:ital,wght@0,300;0,700;1,700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-white font-body text-text-primary antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:bg-white focus:text-primary focus:rounded-lg focus:shadow-lg">
+      Skip to Main Content
+    </a>
+
+    <div class="relative">
+      <slot />
+    </div>
+
+    <!-- Flowbite -->
+    <script>
+      import { initFlowbite } from 'flowbite'
+      initFlowbite()
+    </script>
+  </body>
+</html>

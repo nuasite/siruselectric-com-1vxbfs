@@ -1,0 +1,26 @@
+---
+export interface Props {
+  href: string;
+  imageSrc: string;
+  imageAlt: string;
+  title: string;
+  subtitle?: string;
+}
+
+const { href, imageSrc, imageAlt, title, subtitle = "ELECTRICAL SOLUTION & SERVICES" } = Astro.props;
+---
+
+<a href={href} class="group relative block overflow-hidden rounded-lg shadow-lg">
+  <img 
+    src={imageSrc} 
+    alt={imageAlt} 
+    class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" 
+  />
+  <div class="absolute inset-0 bg-secondary/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+  <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 to-transparent p-6 text-white transition-all duration-300 group-hover:from-transparent">
+    <h3 class="font-heading-bold text-xl">{title}</h3>
+    <div class="h-0 transform-gpu overflow-hidden opacity-0 transition-all duration-300 group-hover:h-auto group-hover:opacity-100">
+      <p class="mt-2 text-sm font-bold text-primary">{subtitle}</p>
+    </div>
+  </div>
+</a>

@@ -1,0 +1,100 @@
+---
+// No props needed - self-contained header component
+---
+
+<header class="sticky top-0 z-50 bg-white shadow-md">
+  <!-- Top Bar -->
+  <div class="bg-gradient-to-r from-topbar-start to-topbar-end text-white">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2 text-sm">
+        <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" role="presentation">
+          <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 005.16-4.057l-1.18-1.18a15.475 15.475 0 01-4.122 3.23l.158.085.01.005.002.001.002.001a.39.39 0 010 .253.39.39 0 01-.258.253l-.002.001-.002.001-.01.005a.152.152 0 01-.158.085l-4.123-3.23-1.18 1.18a16.975 16.975 0 005.16 4.057zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 16a6 6 0 100-12 6 6 0 000 12z" clip-rule="evenodd" />
+        </svg>
+        <p>1 Meadowlands Plaza Suite 200, East Rutherford 07073</p>
+      </div>
+      <div class="flex items-center gap-x-6">
+        <ul class="flex items-center gap-x-3" aria-label="Social Bar">
+          <li>
+            <a href="https://www.instagram.com/sirus_electric" target="_blank" rel="noreferrer noopener" aria-label="Instagram" class="transition hover:opacity-80">
+              <img src="https://static.wixstatic.com/media/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png" alt="Instagram" class="h-6 w-6" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn" class="transition hover:opacity-80">
+              <img src="https://static.wixstatic.com/media/11062b_9e78da3320da497ab23ce28d738d388a~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_9e78da3320da497ab23ce28d738d388a~mv2.png" alt="LinkedIn" class="h-6 w-6" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61553425558962&mibextid=LQQJ4d" target="_blank" rel="noreferrer noopener" aria-label="Facebook" class="transition hover:opacity-80">
+              <img src="https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png" alt="Facebook" class="h-6 w-6" />
+            </a>
+          </li>
+          <li>
+            <a href="tel:5513432038" aria-label="Whatsapp" class="transition hover:opacity-80">
+              <img src="https://static.wixstatic.com/media/11062b_8b3cbae79dcb4a55b4ec2bac32f88d96~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_8b3cbae79dcb4a55b4ec2bac32f88d96~mv2.png" alt="Whatsapp" class="h-6 w-6" />
+            </a>
+          </li>
+        </ul>
+        <a href="tel:(551) 343-2038" class="hidden items-center gap-2 text-sm font-semibold lg:flex">
+          <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" role="presentation">
+            <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+          </svg>
+          <span>(551) 343-2038</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Navigation -->
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <a href="https://www.siruselectric.com" class="flex-shrink-0">
+      <img fetchpriority="high" src="https://static.wixstatic.com/media/03854e_fbcf85bf50344ac6b6ac6e3c7deab5e5~mv2.jpg/v1/crop/x_222,y_210,w_772,h_290/fill/w_219,h_82,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/62C69048-CAB9-4912-AB39-D5B7C5AAB7ED_jpeg.jpg" alt="Sirus Electric Inc" class="h-16 w-auto" />
+    </a>
+    
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="Site">
+      <ul class="flex items-center gap-1">
+        <li><a href="https://www.siruselectric.com" class="px-3 py-2 text-sm font-bold uppercase tracking-wider text-primary">HOME</a></li>
+        <li><a href="https://www.siruselectric.com/services" class="px-3 py-2 text-sm font-bold uppercase tracking-wider text-gray-800 transition hover:text-primary">SERVICES</a></li>
+        <li><a href="https://www.siruselectric.com/projects" class="px-3 py-2 text-sm font-bold uppercase tracking-wider text-gray-800 transition hover:text-primary">PROJECTS</a></li>
+        <li><a href="https://www.siruselectric.com/areas" class="px-3 py-2 text-sm font-bold uppercase tracking-wider text-gray-800 transition hover:text-primary">AREAS</a></li>
+        <li><a href="https://www.siruselectric.com/about-us" class="px-3 py-2 text-sm font-bold uppercase tracking-wider text-gray-800 transition hover:text-primary">ABOUT US</a></li>
+        <li><a href="https://www.siruselectric.com/contact-us" class="px-3 py-2 text-sm font-bold uppercase tracking-wider text-gray-800 transition hover:text-primary">CONTACT US</a></li>
+      </ul>
+    </nav>
+    
+    <a href="https://www.siruselectric.com/contact-us" class="ml-6 hidden rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition hover:bg-opacity-90 lg:block">
+      GET A QUOTE
+    </a>
+    
+    <!-- Mobile menu button -->
+    <button 
+      data-collapse-toggle="mobile-menu" 
+      type="button" 
+      class="lg:hidden inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" 
+      aria-controls="mobile-menu" 
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Mobile menu -->
+  <div class="hidden lg:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+      <a href="https://www.siruselectric.com" class="text-primary block px-3 py-2 text-base font-bold uppercase tracking-wider">HOME</a>
+      <a href="https://www.siruselectric.com/services" class="text-gray-800 hover:text-primary block px-3 py-2 text-base font-bold uppercase tracking-wider transition">SERVICES</a>
+      <a href="https://www.siruselectric.com/projects" class="text-gray-800 hover:text-primary block px-3 py-2 text-base font-bold uppercase tracking-wider transition">PROJECTS</a>
+      <a href="https://www.siruselectric.com/areas" class="text-gray-800 hover:text-primary block px-3 py-2 text-base font-bold uppercase tracking-wider transition">AREAS</a>
+      <a href="https://www.siruselectric.com/about-us" class="text-gray-800 hover:text-primary block px-3 py-2 text-base font-bold uppercase tracking-wider transition">ABOUT US</a>
+      <a href="https://www.siruselectric.com/contact-us" class="text-gray-800 hover:text-primary block px-3 py-2 text-base font-bold uppercase tracking-wider transition">CONTACT US</a>
+      <div class="pt-4">
+        <a href="https://www.siruselectric.com/contact-us" class="block w-full text-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition hover:bg-opacity-90">
+          GET A QUOTE
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
