@@ -12,7 +12,7 @@
 		"@astrojs/mdx": "4.3.0",
 		"@astrojs/rss": "4.0.11",
 		"@astrojs/sitemap": "3.4.1",
-		"@nuasite/nua": "0.0.59",
+		"@nuasite/nua": "0.0.71",
 		"@tailwindcss/vite": "^4.1.11",
 		"astro": "^5.12.4",
 		"flowbite": "^3.1.2",
